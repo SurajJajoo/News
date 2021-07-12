@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+
+    <Button
+        android:id="@+id/science"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:onClick="scienceNews"
+        android:text="Science"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/entertainment"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:onClick="entertainmentNews"
+        android:text="Entertainment"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/science" />
+
+    <Button
+        android:id="@+id/sports"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:onClick="sportsNews"
+        android:text="Sports"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entertainment" />
+
+    <Button
+        android:id="@+id/business"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:onClick="businessNews"
+        android:text="Business"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sports" />
+</androidx.constraintlayout.widget.ConstraintLayout>
